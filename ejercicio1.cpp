@@ -64,8 +64,8 @@ void menuPrincipal(int cant, double x){
     cout << "----------ESTRUCTURA DE DATOS----------" << endl;
     cout << "      Notas definitivas - I Corte      " << endl;
     cout << endl;
-    cout << "  1. Mostrar la nota mas alta." << endl;
-    cout << "  2. Mostrar la nota mas baja." << endl;
+    cout << "  1. Mostrar el nombre y la nota mas alta." << endl;
+    cout << "  2. Mostrar el nombre y la nota mas baja." << endl;
     cout << "  3. El promedio de notas." << endl;
     cout << "  4. Editar notas o nombre de estudiante." << endl;
     cout << "  5. Mostrar las notas ordenadas de menor a mayor." << endl;
@@ -153,7 +153,7 @@ void menuPrincipal(int cant, double x){
         cout << "Has ingresado un numero invalido. Intente otra vez." << endl;
         system("pause");
         system("cls");
-        main();
+        menuPrincipal(cant, x);
         break;
     }
 }
