@@ -169,6 +169,9 @@ void nombreONota(int cant, double x){
 
     switch(opc){
         case 1: 
+            system("cls");
+            mostrarEstudiantes(cant);
+            cout << endl;
             cout << "Ingrese el # del estudiante que deseas modificar: " << endl;
             cin >> posicion;
             if (posicion <= cant){
@@ -188,6 +191,9 @@ void nombreONota(int cant, double x){
             break;
 
         case 2:
+            system("cls");
+            mostrarEstudiantes(cant);
+            cout << endl;
             cout << "Ingrese el # del estudiante que deseas modificar: " << endl;
             cin >> posicion;
             if (posicion <= cant){
