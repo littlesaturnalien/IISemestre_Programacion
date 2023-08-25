@@ -40,6 +40,12 @@ int main(){
         scanf(" %[^\n]", notasDefinitivas[i].nombreCompleto);
         cout << "Ingrese su nota del 1er Corte: " << endl;
         cin >> notasDefinitivas[i].notas;
+        while(notasDefinitivas[i].notas > 100 || notasDefinitivas[i].notas < 0){
+            cout << "Nota invalida - Intente otra vez" << endl;
+            cout << endl;
+            cout << "Ingrese su nota del 1er Corte: " << endl;
+            cin >> notasDefinitivas[i].notas;
+        }
         x = x + notasDefinitivas[i].notas;
         cout << endl;
         }
